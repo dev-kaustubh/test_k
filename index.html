@@ -1,107 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <title>
-    Kaustubh Farfad
-  </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-* {
-  box-sizing: border-box;
-}
-    .menu {
-  float: left;
-  width: 20%;
-}
-.menuitem {
-  padding: 8px;
-  margin-top: 7px;
-  border-bottom: 1px solid #f1f1f1;
-}
-.main {
-  float: left;
-  width: 60%;
-  padding: 0 20px;
-  overflow: hidden;
-    }
-    
-  .right {
-  background-color: lightblue;
-  float: left;
-  width: 20%;
-  padding: 10px 15px;
-  margin-top: 7px;
-}
-  </style>
-    <body style="font-family:Verdana;">
+    <head>
+        <title> Contact-form</title>
+        <link
+        rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        />
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-primary">
+            <a href="#" class="navbar-brand">Contact-form</a>
+        </nav>
+        <div class="container mt-3 card card-body p-4">
+            <h4 class="text-center">Contact-form</h4>
+            <div class="form-group">
+                <label for="Name"> Full Name</label>
+                <input type="text" name="FullName" id="userFullName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="Email"> Email</label>
+                <input type="Email" name="Email" id="userEmail" class="form-control" /> 
+            </div>
 
-<div style="background-color:#f1f1f1;padding:15px;">
-  <h1>Portfolio</h1>
-</div>
+            <div class="form-group">
+                <label for="Message">Message</label>
+                <textarea name="Message" id="userMessage" class="form-Control">
+                </textarea>
+            </div>
+            <button id = "Submit" class="btn btn-primary"> Submit</button>
+        </div>
 
-<div style="overflow:auto">
-  <div class="menu">
-    <div class="menuitem"><a href='#Skills'>Skills</a></div>
-    <div class="menuitem"><a href='#Projects'>Projects</a></div>
-    <div class="menuitem"><a href='#Interests'>Interests</a></div>
-    <div class="menuitem"><a href='#Responsibilities'>Responsibilities</a></div>
-  </div>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+        <script src="main.js"></script>
 
-  <div class="main">
-    <h2>Career Objective</h2>
-    <p>Dedicated and active team player with a mission to maximize the benefits of organization while having a vision to explore myself in the field of business intelligence. </p>
-     
-    <section id='skills'>
-        <h2> (#Skills) Skills </h2>
-        <ul>
-          <li>R Programming</li>
-          <li>Tableau</li>
-          <li>Web development Front-end</li>
-          <li>Fluent in English</li>
-        </ul>
-      </section>
-      
-      <section id='Projects'>
-        <h2> (#Projects) Projects </h2>
-        <ul>
-          <li>Field choosing model for 12th students using Predictive Analysis</li>
-          <li>Automatic Solar Panel Cleaner using Arduino</li>
-          <li>Corelation analysis of Happy life index using Rstudio</li>
-          <li>MSD-Smart Dustbin using Embedded systems </li>
-        </ul>
-      </section>
-
-      <section id='Interests'>
-        <h2> (#Interests) Interests </h2>
-        <ul>
-          <li>Aero-modelling</li>
-          <li>Social-Work</li>
-          <li>Volleyball</li>
-          <li>Carrom</li>
-        </ul>
-      </section>
-                 
-      <section id='Responsibilities'>
-        <h2> (#Responsibilities) Responsibilities </h2>
-        <ul>
-          <li>RC Aircraft Head at MIT-AERO</li>
-          <li>Social media co-ordinator at Pune-Ploggers</li>
-        </ul>
-      </section>
-    
-    
-  </div>
-
-  <div class="right">
-    <img src="https://github.com/dev-kaustubh/test_k/blob/master/kaustubh_capture.PNG" style="width:50%">
-  </div>
-</div>
-
-
-<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;">For LinkedIn Profile
-    <a href="https://www.linkedin.com/in/kaustubh-farfad-290029/">click here</a></div>
-      
-   
-  </body>
-  
-  
+     </body>
 </html>
